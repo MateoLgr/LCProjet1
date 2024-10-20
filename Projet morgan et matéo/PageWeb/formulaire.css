@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+    height: 400px;
+    
+    color: white;
+}
+
+.info{
+    display: flex ;
+    flex-direction: column;
+}
