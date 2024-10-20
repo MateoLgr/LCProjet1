@@ -1,11 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
 body{
     background-color: black;
-    height: 400px;
-    
+    height: auto;
     color: white;
+    font-family: "Instrument Sans", sans-serif;
+    margin: 0px 128px;
+    background-image: url(../assets/sushi.svg);
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
-.info{
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    width: 100%;
+}
+
+.hamburgerMenu {
+    display: none;
+    width: 290.267px;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+    justify-content: end;
+    align-items: center;
+    width: 290.267px;
+}
+
+.retour{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+.frame-all{
     display: flex ;
     flex-direction: column;
+    gap: 64px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form p{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formNom-Prenom{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.formNom{
+    gap: 8px;
+}
+
+.formNom input{
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    width: 300px;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+}
+
+.labelNom{
+    font-size: 16px;
+    color: #ADADAD;
+}
+
+.formPrenom{
+    gap: 8px;
+}
+
+.formPrenom input{
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    width: 300px;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+}
+
+.labelPrenom{
+    font-size: 16px;
+    color: #ADADAD;
+}
+
+
+.case{
+    display: flex;
+    flex-direction: column;
+}
+
+.formTel{
+    gap: 8px;
+}
+
+.formTel input{
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    width: 642px;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+}
+
+.labelTel{
+    font-size: 16px;
+    color: #ADADAD;
+}
+
+.commander{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    align-items: center;
+}
+
+.buttonCommander{
+    border-radius: 8px;
+    padding: 16px 12px;
+    border: none;
+    height: 44px;
+    width: 300px;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: bold;
+}
+
+.buttonCommander:hover{
+    background-color: #D4D4D4;
+    cursor: pointer;
+}
+
+.dejaCompte{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonDejaCompte{
+    border-radius: 8px;
+    color: #FDFDFD;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.buttonDejaCompte:hover{
+    color: #8C7000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 970px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: flex;
+    }
+
+
 }

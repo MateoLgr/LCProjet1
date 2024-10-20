@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
 
-        <meta charset="UTF-8">
-        <title> Formulaire </title>
-        <meta type="description" content="Formulaire de commande">
-        <link rel="stylesheet" href="formulaire.css" type="text/css">
-    </head>
+<head>
 
-    <body>
-        <div>
+    <meta charset="UTF-8">
+    <title> Formulaire </title>
+    <meta type="description" content="Formulaire de commande">
+    <link rel="stylesheet" href="formulaire.css" type="text/css">
+</head>
 
+<body>
+
+    <header class="header">
+        <div class="hamburgerMenu">
+            <img src="/assets/hamburger.svg" alt="hamburgerMenu">
         </div>
-        <div class="info">
-            <div class="labels">
-                <p>Entrez vos informations</p>
-                <div class="formNom&Prenom">
+        <div class="menu">
+            <p>Nos sushi</p>
+            <p>Nos adresses</p>
+            <p>À propos de nous</p>
+        </div>
+        <div class="logo">
+            <img src="../assets/logo.svg" alt="logo" />
+        </div>
+        <div class="icons">
+            <img src="../assets/cart.svg" alt="cart" />
+            <img src="../assets/profile.svg" alt="profile" />
+        </div>
+    </header>
 
-                    <div class="formNom">
-                        <label for="nom">Nom&nbsp;:</label>
+    <div class="retour">
+        <a href="../index.html">
+            <img src="../assets/Retour.svg" alt="retour">
+        </a>
+    </div>
+
+    <div class="frame-all">
+        <div class="form">
+            <p>Entrez vos informations</p>
+            <div class="information">
+                <div class="formNom-Prenom">
+
+                    <div class="formNom case">
+                        <label class="labelNom" for="nom">Nom&nbsp;:</label>
                         <input type="text" id="nom" name="user_nom" />
                     </div>
 
-                    <div class="formPrenom">
-                        <label for="prenom">Prenom&nbsp;:</label>
+                    <div class="formPrenom case">
+                        <label class="labelPrenom" for="prenom">Prenom&nbsp;:</label>
                         <input type="text" id="prenom" name="user_prenom" />
                     </div>
 
                 </div>
 
-                <div class="formTel">
-                    <label for="tel">Téléphone&nbsp;:</label>
+                <div class="formTel case">
+                    <label class="labelTel" for="tel">Téléphone +33&nbsp;:</label>
                     <input type="tel" id="phone" name="user_phone" />
                 </div>
-
-            </div>
-            <div class="commander">
-
-                <div class="buttonCommander">
-                    <button type="submit">Commander</button>
-                </div>
-
-                <div class="dejaCompte">
-                    <p>Vous avez déjà un compte ?<p>
-                    <div class="buttonDejaCompte">
-                        <button type="submit">Se connecter</button>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </body>
+
+        <div class="commander">
+
+
+            <button class="buttonCommander" type="submit">Commander</button>
+
+            <div class="dejaCompte">
+                <p>Vous avez déjà un compte ?</p>
+                <button class="buttonDejaCompte" type="submit">Se connecter</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
 
 
 
